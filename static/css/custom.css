@@ -1,0 +1,109 @@
+:root {
+    --primary:#097666;
+    --font-size-base: 26px;
+    --white: #fff;
+}
+
+body {
+    font-size: var(--font-size-base);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Section */
+.section {
+    margin: 5rem 0;
+}
+
+/* Buttons */
+.btn_rounded {
+    border-radius: 0.5rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.btn_secondary {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+/* Text */
+.text_primary {
+    color: var(--primary);
+}
+
+
+/* Banner */
+.banner {
+    color: var(--white)
+}
+
+.jumbotron {
+    background-color: var(--primary);
+}
+
+.banner__title {
+    font-weight: 300;
+}
+
+.banner__subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.banner__subtitle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6%;
+    height: 1px;
+    padding-top: 1px;
+    border-top: solid 3px var(--white);
+}
+
+.banner__cta-title {
+    font-size: 1.75rem;
+}
+
+/* About */
+.about__title {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.about__text {
+    font-size: 1.5rem;
+}
+
+/* Disclaimer */
+.disclaimer__title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Subscription Form */
+.subscription-form__title {
+    font-size: 1.5rem;
+}
+
+.subscription-form .form-check-label {
+    font-size: 1.2rem;
+    color: #6d6d6d;
+}
+
+.subscription-form .form-check-input {
+    position: relative;
+}
+
+.subscription-form .form-control {
+    border-width: 2px;
+    border-radius: 7px;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #6d6d6d;
+}
