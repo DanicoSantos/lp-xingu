@@ -26,6 +26,11 @@ body {
     color: var(--primary);
 }
 
+.btn_primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
 /* Text */
 .text_primary {
     color: var(--primary);
