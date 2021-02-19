@@ -39,11 +39,12 @@ body {
 
 /* Banner */
 .banner {
+    background: url('../img/bg-banner.jpg');
     color: var(--white)
 }
 
 .jumbotron {
-    background-color: var(--primary);
+    background: transparent;
 }
 
 .banner__title {
@@ -85,6 +86,7 @@ body {
 /* Disclaimer */
 .disclaimer__title {
     font-size: 2rem;
+    color: var(--white);
     text-align: center;
 }
 
