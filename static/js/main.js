@@ -1,4 +1,4 @@
-var $form = $('form#subscription-form'), $submissionCompleteAlert = $('#submissionCompleteAlert'),
+let $form = $('form#subscription-form'), $submissionCompleteAlert = $('#submissionCompleteAlert'),
     url = 'https://script.google.com/macros/s/AKfycbyySzf4RsZkM7Pbu2NTQEUNc35s26esBUTtk7lgG35JVjdV9yUt/exec';
 
 const confirmationAlert = `<div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -23,7 +23,7 @@ const submissionComplete = () => {
 
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
-  var jqxhr = $.ajax({
+  let jqxhr = $.ajax({
     url: url,
     method: "GET",
     dataType: "json",
