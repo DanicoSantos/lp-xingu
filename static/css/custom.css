@@ -43,7 +43,8 @@ body {
 
 /* Banner */
 .banner {
-    background: url('../img/bg-banner.jpg');
+    background: url('../img/bg-banner.jpg') no-repeat;
+    background-size: cover;
     color: var(--white)
 }
 
