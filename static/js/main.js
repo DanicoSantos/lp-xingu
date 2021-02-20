@@ -21,13 +21,17 @@ const submissionComplete = () => {
     $('.spinner-border').remove();
 }
 
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  let jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    beforeSend: () => $submissionCompleteAlert.append(loadingSpinner),
-    data: $form.serializeObject()   
-  }).done(() => submissionComplete());
-});
+$(() => {
+
+  $('#phone').mask('(00) 00000-0000')
+  $('#submit-form').on('click', function(e) {
+    e.preventDefault();
+    let jqxhr = $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      beforeSend: () => $submissionCompleteAlert.append(loadingSpinner),
+      data: $form.serializeObject()   
+    }).done(() => submissionComplete());
+  });
+})
