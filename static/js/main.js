@@ -13,6 +13,7 @@ const loadingSpinner = `<div class="spinner-border text_primary align-self-cente
 </div>`;
 
 const submissionComplete = () => {
+
     $form.each(function(){
         this.reset();
     });
