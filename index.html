@@ -121,22 +121,25 @@
                 </div>
                 <div class="col-md-8 offset-md-2">
 
-                    <form>
+                    <form id="subscription-form">
+                        <div class="form-group d-flex justify-content-center" id="submissionCompleteAlert"></div>
                         <div class="form-group">
-                            <label for="name">Nome completo</label>
-                            <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+                            <label for="name">Nome completo <a class="text-danger" data-toggle="tooltip" title="Obrigatório">*</a></label>
+                            <input type="text" required class="form-control" name="nome" id="name" aria-describedby="nameHelp" placeholder="João da Silva">
                         </div>
                         <div class="form-row">
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="email">E-mail</label>
-                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                    <label for="email">E-mail <a class="text-danger" data-toggle="tooltip" title="Obrigatório">*</a>
+                                    
+                                    </label>
+                                    <input type="email" required class="form-control" name="e-mail" id="email" aria-describedby="emailHelp" placeholder="exemplo@email.com">
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="phone">Whatsapp</label>
-                                    <input type="tel" class="form-control" id="phone" aria-describedby="phoneHelp">
+                                    <label for="phone">Whatsapp <a class="text-danger" data-toggle="tooltip" title="Obrigatório">*</a></label>
+                                    <input type="tel" required class="form-control" name="whatsapp" id="phone" aria-describedby="phoneHelp" placeholder="(XX) XXXX-XXXX">
                                 </div>
                             </div>
                         </div>
@@ -145,21 +148,21 @@
                             <label for="phone">Neste evento quero ser:</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="user-type" id="user-type-1"
+                            <input class="form-check-input" type="radio" name="tipo" id="user-type-1"
                                 value="participante" checked>
                             <label class="form-check-label" for="user-type-1">
                                 Participante
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="user-type" id="user-type-2"
+                            <input class="form-check-input" type="radio" name="tipo" id="user-type-2"
                                 value="expositor">
                             <label class="form-check-label" for="user-type-2">
                                 Expositor
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="user-type" id="user-type-3"
+                            <input class="form-check-input" type="radio" name="tipo" id="user-type-3"
                                 value="patrocinador">
                             <label class="form-check-label" for="user-type-3">
                                 Patrocinador
@@ -167,7 +170,7 @@
                         </div>
 
                         <div class="form-group d-flex justify-content-center align-items-center mt-4">
-                            <input type="submit" class="btn btn_primary btn_rounded font-weight-bold" value="Enviar">
+                            <input type="submit" id="submit-form" class="btn btn_primary btn_rounded font-weight-bold" value="Enviar">
                         </div>
                     </form>
                 </div>
@@ -180,10 +183,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="static/js/jquery.serialize-object.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-    <script src="" async defer></script>
+    <script src="static/js/main.js" async defer></script>
 </body>
 
 </html>
