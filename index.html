@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/custom.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -28,24 +29,33 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-5 order-md-1 order-2">
                         <div class="banner__cta d-flex flex-column justify-content-between h-100">
                             <div class="banner__cta-text">
-                                <h1 class="banner__title">Está chegando a maior feira gratuita de
-                                    negócios do pescado da região do xingu</h1>
-                                <p class="banner__subtitle"><strong>28 e 29</strong> de abril</p>
+                                <h1 class="banner__title">Está chegando a maior feira de
+                                    negócios do pescado da região xingu</h1>
+                                <p class="banner__subtitle mt-5 mb-0 mb-md-2 mt-md-0"><strong><span class="banner__styled-number">28</span> e 29</strong> de abril de 2021</p>
                             </div>
 
-                            <div class="banner__cta-container my-5">
+                            <div class="banner__cta-container my-5 d-none d-md-block">
                                 <h4 class="banner__cta-title"><strong>Faça sua pré-inscrição</strong></h4>
-                                <a href="#subscription-form" class="btn btn_secondary btn_rounded font-weight-bold">Quero participar</a>
+                                <a href="#subscription-form"
+                                    class="btn btn_secondary btn_rounded font-weight-bold">Quero participar</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 offset-md-1">
+                    <div class="col-md-6 offset-md-1 order-first order-md-2">
                         <!-- Logo -->
                         <div class="banner__event-logo">
                             <img class="img-fluid" src="static/img/logo.png" alt="Logo Feira de Negócios do Pescado">
+                        </div>
+                    </div>
+
+                    <div class="col-12 order-2 order-md-last">
+                        <div class="banner__cta-container my-5 d-md-none d-block text-center">
+                            <h4 class="banner__cta-title"><strong>Faça sua pré-inscrição</strong></h4>
+                            <a href="#subscription-form" class="btn btn_secondary btn_rounded font-weight-bold">Quero
+                                participar</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +75,12 @@
                 <div class="col-md-6">
                     <div class="about__content">
                         <h2 class="about__title">Sobre</h2>
-                        <p class="about__text">A Pesca Xingu - Feira de Negócios do Pescado na Região Xingu é uma iniciativa da REDES FIEPA em parceria com a NORTE ENERGIA S/A. Um evento inovador para a região e no seu segmento, não somente pelo formato online e presencial, mas também pela ampla programação temática e oportunidade de gerar negócios. O evento constitui um importante passo para o fortalecimento da cadeia produtiva do pescado na Região Xingu, alinhado às estratégias de desenvolvimento sustentável para a Amazônia Brasileira. </p>
+                        <p class="about__text">A Pesca Xingu - Feira de Negócios do Pescado na Região Xingu é uma
+                            iniciativa da REDES/FIEPA em parceria com a NORTE ENERGIA. Um evento inovador para a região
+                            e no seu segmento, não somente pelo formato online e presencial, mas também pela ampla
+                            programação temática e oportunidade de gerar negócios. O evento constitui um importante
+                            passo para o fortalecimento da cadeia produtiva do pescado na Região Xingu, alinhado às
+                            estratégias de desenvolvimento sustentável para a Amazônia Brasileira. </p>
                     </div>
                 </div>
             </div>
@@ -79,7 +94,8 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body p-0 d-flex justify-content-center align-items-center position-relative">
-                            <img class="img-fluid" src="static/img/event-duration-img.jpg" width="100%" alt="duração do evento">
+                            <img class="img-fluid" src="static/img/event-duration-img.jpg" width="100%"
+                                alt="duração do evento">
                             <h4 class="card-title disclaimer__title mb-0 position-absolute"><strong>+ 20 horas
                                 </strong> <span class="d-block">de evento</span></h4>
                         </div>
@@ -88,7 +104,8 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body p-0 d-flex justify-content-center align-items-center position-relative">
-                            <img class="img-fluid" src="static/img/event-type-img.jpg" width="100%" alt="tipo de evento">
+                            <img class="img-fluid" src="static/img/event-type-img.jpg" width="100%"
+                                alt="tipo de evento">
                             <h4 class="card-title disclaimer__title mb-0 position-absolute"><strong>Feira
                                     presencial</strong> <span class="d-block"><small>Com transmissão
                                         online</small></span></h4>
@@ -98,8 +115,10 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body p-0 d-flex justify-content-center align-items-center position-relative">
-                            <img class="img-fluid" src="static/img/event-speakers-quantity.jpg" width="100%" alt="número de palestrantes">
-                            <h4 class="card-title disclaimer__title mb-0 position-absolute"><strong>+ 20</strong> <span class="d-block">palestrantes</span></h4>
+                            <img class="img-fluid" src="static/img/event-speakers-quantity.jpg" width="100%"
+                                alt="número de palestrantes">
+                            <h4 class="card-title disclaimer__title mb-0 position-absolute"><strong>+ 20</strong> <span
+                                    class="d-block">palestrantes</span></h4>
                         </div>
                     </div>
                 </div>
@@ -108,16 +127,20 @@
     </section>
 
     <!-- Subscription Form -->
-    <section class="section bg-light py-4 subscription-form">
+    <section class="section bg-light py-4 subscription-form" id="subscription-form">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h3 class="subscription-form__title font-weight-bold text_primary text-center mb-5">Faça sua pré-inscrição na maior feira de negócios do
+                <div class="col-md-12 d-none">
+                    <h3 class="subscription-form__title font-weight-bold text_primary text-center mb-5">Faça sua
+                        pré-inscrição na maior feira de negócios do
                         pescado da região do Xingu</h3>
                 </div>
                 <div class="col-md-8 offset-md-2">
+                    <div role="main" id="lp-xingu-form-a0427964364e86059a6d"></div>
 
-                    <form id="subscription-form">
+
+
+                    <!-- <form id="subscription-form">
                         <div class="form-group d-flex justify-content-center" id="submissionCompleteAlert"></div>
                         <div class="form-group">
                             <label for="name">Nome completo <a class="text-danger" data-toggle="tooltip" title="Obrigatório">*</a></label>
@@ -168,22 +191,24 @@
                         <div class="form-group d-flex justify-content-center align-items-center mt-4">
                             <input type="submit" id="submit-form" class="btn btn_primary btn_rounded font-weight-bold" value="Enviar">
                         </div>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h3 class="font-weight-bold text_primary text-center mb-md-4">Realização:</h3>
-                    <img src="static/img/logo-horizontal-norte-energia.jpg" width="100%" alt="Norte Energia" class="img-fluid">
+                    <h3 class="font-weight-bold text_primary text-center mb-5 mb-md-4">Realização:</h3>
+                    <img src="static/img/logo-horizontal-norte-energia.jpg" width="100%" alt="Norte Energia"
+                        class="img-fluid">
                 </div>
                 <div class="offset-md-2 col-md-4">
-                    <h3 class="font-weight-bold text_primary text-center mb-md-4">Execução:</h3>
-                    <img src="static/img/logo-redes-fiepa-horizontal.png" width="100%" alt="Redes Fiepa" class="img-fluid">
+                    <h3 class="font-weight-bold text_primary text-center my-5 mb-md-4 mt-md-0 ">Execução:</h3>
+                    <img src="static/img/logo-redes-fiepa-horizontal.png" width="100%" alt="Redes Fiepa"
+                        class="img-fluid">
 
                 </div>
             </div>
@@ -195,12 +220,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="static/js/jquery.serialize-object.min.js"></script>
-        <script src="static/js/jquery.mask.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/js/jquery.serialize-object.min.js"></script>
+    <script src="static/js/jquery.mask.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+    <script
+        type="text/javascript"> new RDStationForms('lp-xingu-form-a0427964364e86059a6d', 'UA-108088381-1').createForm();</script>
     <script src="static/js/main.js" async defer></script>
 </body>
 

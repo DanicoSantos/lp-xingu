@@ -1,121 +1,147 @@
 :root {
-    --primary:#097666;
-    --font-size-base: 26px;
-    --white: #fff;
+  --primary: #097666;
+  --font-size-base: 26px;
+  --white: #fff;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-size: var(--font-size-base);
-    font-family: 'Montserrat', sans-serif;
+  font-size: var(--font-size-base);
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Section */
 .section {
-    margin: 5rem 0;
+  margin: 5rem 0;
 }
 
 /* Buttons */
 .btn_rounded {
-    border-radius: 0.5rem;
-    padding-top: 3px;
-    padding-bottom: 3px;
+  border-radius: 0.5rem;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 
 .btn_secondary {
-    background-color: var(--white);
-    color: var(--primary);
+  background-color: var(--white);
+  color: var(--primary);
 }
 
 .btn_primary {
-    background-color: var(--primary);
-    color: var(--white);
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 /* Text */
 .text_primary {
-    color: var(--primary);
+  color: var(--primary);
 }
-
 
 /* Banner */
 .banner {
-    background: url('../img/bg-banner.jpg') no-repeat;
-    background-size: cover;
-    color: var(--white)
+  background: url("../img/bg-banner.jpg") no-repeat;
+  background-size: cover;
+  color: var(--white);
 }
 
 .jumbotron {
-    background: transparent;
+  background: transparent;
 }
 
 .banner__title {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .banner__subtitle {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-top: 2rem;
-    position: relative;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  position: relative;
 }
 
 .banner__subtitle::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 6%;
-    height: 1px;
-    padding-top: 1px;
-    border-top: solid 3px var(--white);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6%;
+  height: 1px;
+  padding-top: 1px;
+  border-top: solid 3px var(--white);
 }
 
 .banner__cta-title {
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 
 /* About */
 .about__title {
-    color: var(--primary);
-    font-weight: 700;
+  color: var(--primary);
+  font-weight: 700;
 }
 
 .about__text {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 /* Disclaimer */
 .disclaimer__title {
-    font-size: 2rem;
-    color: var(--white);
-    text-align: center;
+  font-size: 2rem;
+  color: var(--white);
+  text-align: center;
 }
 
 /* Subscription Form */
 .subscription-form__title {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .subscription-form .form-check-label {
-    font-size: 1.2rem;
-    color: #6d6d6d;
+  font-size: 1.2rem;
+  color: #6d6d6d;
 }
 
 .subscription-form .form-check-input {
-    position: relative;
+  position: relative;
 }
 
 .subscription-form .form-control {
-    border-width: 2px;
-    border-radius: 7px;
+  border-width: 2px;
+  border-radius: 7px;
 }
 
 .form-group label {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #6d6d6d;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #6d6d6d;
+}
+
+@media (max-width: 720px) {
+  .banner__title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .banner__subtitle {
+    text-align: center;
+  }
+
+  .banner__subtitle::before {
+    border: none;
+  }
+
+  .banner__cta-title {
+    font-size: 1.5rem;
+  }
+
+  .banner__event-logo {
+    text-align: center;
+  }
+
+  .banner__event-logo img {
+    width: 75%;
+  }
 }
